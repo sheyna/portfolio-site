@@ -1,0 +1,30 @@
+.nav-items
+  margin: 1.3em auto 1.6em auto
+  width: 65%
+  display: block
+  @media only screen and (max-width: 1102px)
+    font-size: 80%
+  @media only screen and (max-width: 885px)
+    font-size: 60%
+  @media only screen and (max-width: 650px)
+    font-size: 90%
+  @media only screen and (max-width: 540px)
+    font-size: 80%
+  @media only screen and (max-width: 484px)
+    font-size: 90%
+  li
+    font-family: $font-family--heading
+    display: inline-block
+    font-size: 1.8em
+    padding: 0.5em 1.5em 0.3em 0
+    margin: 0
+    list-style-type: none
+    @media only screen and (max-width: 484px)
+      display: block
+    a
+      color: $color-body-text
+      text-decoration: none
+      &:hover
+        color: $color-primary
+      &:active
+        color: $color-secondary
