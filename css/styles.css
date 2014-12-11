@@ -49,13 +49,16 @@ table {
   src: url("../fonts/vollkorn-italic-webfont.eot");
   src: url("../fonts/vollkorn-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vollkorn-italic-webfont.woff2") format("woff2"), url("../fonts/vollkorn-italic-webfont.woff") format("woff"), url("../fonts/vollkorn-italic-webfont.ttf") format("truetype"), url("../fonts/vollkorn-italic-webfont.svg#vollkornitalic") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: italic; }
 @font-face {
   font-family: "vollkornregular";
   src: url("../fonts/vollkorn-regular-webfont.eot");
   src: url("../fonts/vollkorn-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vollkorn-regular-webfont.woff2") format("woff2"), url("../fonts/vollkorn-regular-webfont.woff") format("woff"), url("../fonts/vollkorn-regular-webfont.ttf") format("truetype"), url("../fonts/vollkorn-regular-webfont.svg#vollkornregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+em {
+  font-style: italic; }
+
 .site-header {
   width: 100%;
   margin: 0;
@@ -68,9 +71,11 @@ table {
 
 .star-logo {
   fill: #C3DB67; }
+  .star-logo:hover, .star-logo:active {
+    fill: #D0627E; }
 
 .nav-items {
-  margin: 1.3em auto 1.6em auto;
+  margin: 1.3em auto 2.4em auto;
   width: 65%;
   display: block; }
   @media only screen and (max-width: 1102px) {
@@ -109,17 +114,40 @@ table {
 .content {
   margin: 0 auto 0 auto;
   width: 65%;
-  min-height: 35em;
+  min-height: 20em;
   display: relative; }
   .content h1 {
     font-size: 3em;
     font-family: "vollkornregular", serif;
     padding: 0.5em 0 0.5em 0;
     color: #C3DB67; }
+    @media only screen and (max-width: 540px) {
+      .content h1 {
+        font-size: 2.3em; } }
+  .content h2 {
+    font-size: 1.7em;
+    padding: 0.5em 0 1em 0;
+    color: #C3DB67; }
+  .content h3 {
+    color: #a1a1a1;
+    font-size: 1.3em;
+    font-style: italic;
+    padding-bottom: 0.3em; }
+  .content ul {
+    list-style-type: disc;
+    list-style-position: inside; }
+  .content li {
+    color: #a1a1a1;
+    font-size: 1.3em; }
   .content p {
     color: #a1a1a1;
     font-size: 1.3em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    padding-bottom: 1em; }
+
+.left-float {
+  float: left;
+  width: 40%; }
 
 .site-footer {
   z-index: 1;
@@ -137,41 +165,85 @@ table {
     text-align: center; }
 
 .icon-links--horizontal {
-  margin: 8% 1% 2% 0;
-  width: 30%;
+  margin: 8% 0 2% 0;
+  width: 35%;
   float: right; }
-  .icon-links--horizontal img {
-    display: inline-block;
-    outline: none;
-    border: 0; }
-  .icon-links--horizontal img {
-    margin: 4%;
-    width: 15%; }
+  @media only screen and (max-width: 1102px) {
+    .icon-links--horizontal {
+      font-size: 90%; } }
+  @media only screen and (max-width: 885px) {
+    .icon-links--horizontal {
+      font-size: 80%; } }
+  @media only screen and (max-width: 650px) {
+    .icon-links--horizontal {
+      font-size: 70%; } }
+  @media only screen and (max-width: 540px) {
+    .icon-links--horizontal {
+      font-size: 60%; } }
+  @media only screen and (max-width: 484px) {
+    .icon-links--horizontal {
+      font-size: 50%; } }
+  .icon-links--horizontal a {
+    margin: 2%;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #a1a1a1;
+    text-decoration: none; }
+    .icon-links--horizontal a:hover, .icon-links--horizontal a:active {
+      color: #C3DB67; }
 
-.icon-links--vertical {
-  margin: 8% 1% 2% 0;
-  margin-top: 0;
+.img-links--vertical {
+  margin: 0 0.5em 0.5em 0;
   width: 10%;
-  float: left;
+  float: right;
   display: absolute;
-  left: 0; }
-  .icon-links--vertical img {
-    display: inline-block;
+  right: 0;
+  top: 0;
+  background-color: #f4f8e3;
+  padding: 0.4em 0.4em 0 0.4em; }
+  .img-links--vertical h1 {
+    font-size: 90%;
+    font-family: "vollkornregular", serif;
+    color: black;
+    padding: 2% auto 5% auto;
+    text-align: center; }
+    @media only screen and (max-width: 700px) {
+      .img-links--vertical h1 {
+        font-size: 70%; } }
+  .img-links--vertical img {
+    display: block;
     outline: none;
-    border: 0; }
-  .icon-links--vertical img {
-    margin: 0 0 20% 1%;
-    width: 100%; }
+    margin: 0 auto 20% auto;
+    width: 90%;
+    opacity: 0.7;
+    border: 0.2em solid #f4f8e3; }
+    .img-links--vertical img:hover {
+      opacity: 1;
+      border-color: #C3DB67; }
 
 .figure-display {
   width: 80%;
-  float: left;
-  margin-left: 15%;
-  display: static; }
+  left: 0;
+  float: left; }
   .figure-display img {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 2em; }
   .figure-display h1 {
     font-size: 1.7em; }
+  .figure-display p {
+    padding-bottom: 1em; }
+    .figure-display p a {
+      color: black; }
+      .figure-display p a:hover {
+        color: #C3DB67; }
+
+.img--horizontal {
+  max-width: 600px;
+  display: block; }
+
+.img--vertical {
+  max-width: 400px;
+  display: block; }
 
 .is-hidden {
   display: none; }

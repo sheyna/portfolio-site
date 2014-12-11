@@ -1,0 +1,24 @@
+[
+  {
+    "imageURL": "images/webdesign/web-clue.jpg",
+    "title": "Clue",
+    "imageClass": "img--horizontal",
+    "liveProjectLink": "/clue/index.html",
+    "githubLink": "https://github.com/sheyna/clue",
+    "description": ["Class project using JavaScript, jQuery, HTML and CSS.", "I knew JavaScript for one month when I wrote this and I knew jQuery for one week. Prior to taking Code Fellows Foundations 1, I had very limited abilities in JavaScript. I could make minor changes to preexisting code but I couldn't write my own. After one month at Code Fellows I created this."]
+  },
+  {
+    "imageURL": "images/webdesign/web-discgolf.png",
+    "title": "Disc Golf Rule Book",
+    "imageClass": "img--horizontal",
+    "liveProjectLink": "http://leviz.github.io",
+    "githubLink": "https://github.com/sheyna/LeviZ.github.io",
+    "description": ["Group project with 2 other people. My roll in the group was to manage the two different navigation structures in JavaScript and to format most of the content in HTML. The project was completed in just over a week."]
+  },
+  {
+    "imageURL": "images/webdesign/web-sheynawatkins.jpg",
+    "title": "sheynawatkins.com",
+    "imageClass": "img--horizontal",
+    "description": ["I created this website entirely from scratch using Sass, Ajax, JSON, HTML and JavaScript. The social media icons come from IcoMoon."]
+  }
+]
