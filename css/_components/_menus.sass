@@ -11,7 +11,7 @@
   @media only screen and (max-width: 540px)
     font-size: 60%
   @media only screen and (max-width: 484px)
-    font-size: 50%
+    font-size: 45%
   a
     margin: 2%
     font-size: 2.5em
@@ -23,22 +23,28 @@
       color: $color-primary
 
 .img-links--vertical
-  margin: 0 0.5em 0.5em 0
+  margin: 0.5em 0.5em 0.5em 0
   width: 10%
   float: right
   display: absolute
   right: 0
   top: 0
   background-color: lighten($color-primary, 30)
-  padding: 0.4em 0.4em 0 0.4em
+  padding: 1% 1% 0 1%
+  @media only screen and (max-width: 450px)
+    padding: 0 2% 0 2%
   h1
-    font-size: 90%
+    font-size: 85%
     font-family: $font-family--heading
     color: $color-default2
     padding: 2% auto 5% auto
     text-align: center
+    margin: -60% auto 20% auto
     @media only screen and (max-width: 700px)
-      font-size: 70%
+      font-size: 30%
+    @media only screen and (max-width: 450px)
+      font-size: 3%
+      padding: 0 -2% 0 -2%
   img
     display: block
     outline: none
@@ -46,6 +52,9 @@
     width: 90%
     opacity: 0.7
     border: 0.2em solid lighten($color-primary, 30)
+    @media only screen and (max-width: 450px)
+      width: 75%
+      margin-bottom: 45%
     &:hover
       opacity: 1
       border-color: $color-primary
