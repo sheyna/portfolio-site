@@ -212,42 +212,57 @@ body {
       color: #C3DB67; }
 
 .img-links--vertical {
+  background-color: #f4f8e3;
   margin: 0.5em 0.5em 0.5em 0;
-  width: 10%;
   float: right;
-  display: absolute;
   right: 0;
   top: 0;
-  background-color: #f4f8e3;
+  width: 10%;
   padding: 1% 1% 0 1%; }
   @media only screen and (max-width: 450px) {
     .img-links--vertical {
-      padding: 0 2% 0 2%; } }
+      margin: 5em auto 4em auto;
+      float: none;
+      right: auto;
+      top: auto;
+      width: auto;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      position: relative;
+      display: block;
+      left: 0;
+      overflow: auto; } }
   .img-links--vertical h1 {
-    font-size: 85%;
     font-family: "vollkornregular", serif;
     color: black;
+    font-size: 85%;
     padding: 2% auto 5% auto;
-    text-align: center;
-    margin: -60% auto 20% auto; }
+    margin: -60% auto 20% auto;
+    text-align: center; }
     @media only screen and (max-width: 700px) {
       .img-links--vertical h1 {
         font-size: 30%; } }
     @media only screen and (max-width: 450px) {
       .img-links--vertical h1 {
         font-size: 3%;
-        padding: 0 -2% 0 -2%; } }
+        padding: 0;
+        margin: -1.5em auto 0.5em auto;
+        text-align: left;
+        z-index: 3; } }
   .img-links--vertical img {
     display: block;
-    outline: none;
     margin: 0 auto 20% auto;
-    width: 90%;
+    outline: none;
     opacity: 0.7;
-    border: 0.2em solid #f4f8e3; }
+    border: 0.2em solid #f4f8e3;
+    width: 90%; }
     @media only screen and (max-width: 450px) {
       .img-links--vertical img {
-        width: 75%;
-        margin-bottom: 45%; } }
+        display: inline-block;
+        position: relative;
+        margin: 1em 1em 1em 1em;
+        width: 4em;
+        left: 0;
+        float: left; } }
     .img-links--vertical img:hover {
       opacity: 1;
       border-color: #C3DB67; }
