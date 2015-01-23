@@ -5,7 +5,15 @@
     "imageClass": "img--horizontal",
     "liveProjectLink": "/clue/index.html",
     "githubLink": "https://github.com/sheyna/clue",
-    "description": ["Class project using JavaScript, jQuery, HTML and CSS.", "I knew JavaScript for one month when I wrote this and I knew jQuery for one week. Prior to taking Code Fellows Foundations 1, I had very limited abilities in JavaScript. I could make minor changes to preexisting code but I couldn't write my own. After one month at Code Fellows I created this."]
+    "description": ["Class project using JavaScript, jQuery, HTML and CSS. I created this project entirely by myself.", "I knew JavaScript for one month when I wrote this. This is my first project using jQuery. Prior to taking Code Fellows Foundations 1, I had very limited abilities in JavaScript. I could make minor changes to preexisting code but I couldn't write my own. After one month at Code Fellows I created this."]
+  },
+  {
+    "imageURL": "images/webdesign/web-involve.jpg",
+    "title": "Involve",
+    "imageClass": "img--horizontal",
+    "liveProjectLink": "http://involve.herokuapp.com/",
+    "githubLink": "https://github.com/Involve-Seattle/Activity-Calendar/",
+    "description": ["This is my final project from Code Fellows. I created it with four other people. I wrote most of the CSS using Sass (mobile first). I also created the logo and visual look of the site on style tiles. Of my co-collaborators, 3 were JavaScript devs who worked with Angular.js and the back end. The other person was UX person who worked out the wireframes and user flow and wrote some of the Sass. We all wrote parts of the HTML.", "This project aggregates meeting information from public agencies and allows users to email information about a meeting to a friend."]
   },
   {
     "imageURL": "images/webdesign/web-discgolf.png",

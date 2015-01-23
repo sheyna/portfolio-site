@@ -259,6 +259,7 @@ li.questions { /* the questions under the <ol> */
   position: relative;
   display: inline-block;
   margin-bottom: 50px;
+  min-height: 500px;
 }
 .choices-correct { /* On answer page: box that holds all the answer cards */
   position: relative;
@@ -276,6 +277,13 @@ li.questions { /* the questions under the <ol> */
 .cardGray {
   opacity: 0.2;
 }
+.currentDisplay{
+  min-height: 296px;
+}
+.answerDisplay {
+  min-height: 245px;
+}
+
 #glass { /* magnifying class in the upper left of browser */
   background-image: url('../images/magglass.png');
   background-repeat: no-repeat;
