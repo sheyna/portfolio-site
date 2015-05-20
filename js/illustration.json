@@ -1,0 +1,20 @@
+[
+  {
+    "imageURL": "images/illustration/illo-marieantoinette.jpg",
+    "title": "Marie Antoinette",
+    "imageClass": "img--vertical",
+    "description": ["Personal project created in Photoshop."]
+  },
+  {
+    "imageURL": "images/illustration/illo-crinoline.jpg",
+    "title": "Ridiculous Fashion",
+    "imageClass": "img--horizontal",
+    "description": ["Personal project combining pencil drawing and Photoshop. All of the dangers listed above are real historical wardrobe malfunctions."]
+  },
+  {
+    "imageURL": "images/illustration/illo-couple.jpg",
+    "title": "Always",
+    "imageClass": "img--vertical",
+    "description": ["Personal project combining pencil drawing and Photoshop."]
+  }
+]

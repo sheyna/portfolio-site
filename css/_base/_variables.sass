@@ -7,7 +7,7 @@
   src: url('../fonts/vollkorn-italic-webfont.eot')
   src: url('../fonts/vollkorn-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/vollkorn-italic-webfont.woff2') format('woff2'), url('../fonts/vollkorn-italic-webfont.woff') format('woff'), url('../fonts/vollkorn-italic-webfont.ttf') format('truetype'), url('../fonts/vollkorn-italic-webfont.svg#vollkornitalic') format('svg')
   font-weight: normal
-  font-style: normal
+  font-style: italic
 
 @font-face
   font-family: 'vollkornregular'
@@ -19,6 +19,9 @@
 $font-family--heading : 'vollkornregular', serif
 $font-family--body    : 'vollkornregular', serif
 
+em
+  font-style: italic
+
 // Color Usage
 
 $color-primary    : #C3DB67
@@ -26,6 +29,9 @@ $color-secondary  : #D0627E
 $color-tertiary   : #9E4A94
 $color-quaternary : #88C95E
 $color-default    : white
-$color-shadow     : lighten(#BAC29A, 10) /* #4e4c3d */
+$color-default2   : black
+$color-shadow     : lighten(#BAC29A, 10)
 $color-body-text  : lighten(#545454, 30)
 
+body
+  background-color: $color-default
