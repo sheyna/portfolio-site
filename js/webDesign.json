@@ -1,5 +1,12 @@
 [
   {
+    "imageURL": "images/webdesign/web-ofas.jpg",
+    "title": "Orthopedic + Fracture Specialists",
+    "imageClass": "img--horizontal",
+    "liveProjectLink": "http://www.oandfs.com",
+    "description": ["This is a front-end project I did. I wrote the CSS for this site using Less. I wrote the HTML and a little of the JavaScript. It was later put into WordPress by someone else. This was the first project I'd ever done using Less."]
+  },
+  {
     "imageURL": "images/webdesign/web-clue.jpg",
     "title": "Clue",
     "imageClass": "img--horizontal",
@@ -27,6 +34,8 @@
     "imageURL": "images/webdesign/web-sheynawatkins.jpg",
     "title": "sheynawatkins.com",
     "imageClass": "img--horizontal",
+    "liveProjectLink": "http://www.sheynawatkins.com",
+    "githubLink": "https://github.com/sheyna/portfolio-site",
     "description": ["I created this website entirely from scratch using Sass, Ajax, JSON, HTML and JavaScript. The social media icons come from IcoMoon."]
   }
 ]
