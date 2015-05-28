@@ -7,8 +7,9 @@ var navTarget = document.getElementById('navTarget');
 var footerTarget = document.getElementById('footerTarget');
 var contentAboutTarget = document.getElementById('contentAboutTarget');
 var contentIllustrationTarget = document.getElementById('contentIllustrationTarget');
+var mobileMenuTarget = document.getElementById('sidr-main');
 
-function getLinks() {
+function getLinks(target) {
   var xhrLinks = new XMLHttpRequest();
   xhrLinks.open('GET', 'js/navLinks.json');
   xhrLinks.onreadystatechange = function () {
@@ -20,7 +21,7 @@ function getLinks() {
         ' + navLinks[i].text + '</a>';
       }
       statusHTML += '</ul>';
-      navTarget.innerHTML = statusHTML;
+      target.innerHTML = statusHTML;
     }
   };
   xhrLinks.send();
@@ -41,7 +42,8 @@ function ajaxRequest(target, linkedFile) {
 
 window.onload = function() {
   ajaxRequest(headerTarget, 'partials/header.html');
-  getLinks();
+  // getLinks(navTarget);
   ajaxRequest(footerTarget, 'partials/footer.html');
+  // getLinks(mobileMenuTarget);
 };
 

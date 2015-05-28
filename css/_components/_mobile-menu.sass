@@ -1,0 +1,74 @@
+// styles for the mobile side menu:
+.sidr
+  display: none
+  position: fixed
+  top: 0
+  height: 100%
+  z-index: 999999
+  width: 260px
+  overflow-x: none
+  overflow-y: auto
+  font-family: $font-family--heading
+  font-size: 1.5em
+  background-color: $color-shadow
+  .sidr-inner
+    padding: 0 0 15px 0
+  &.right
+    left: auto
+    right: -260px
+  ul
+    display: block
+    margin: 15px 0 15px 0
+    padding: 0
+    li
+      display: block
+      margin: 0
+      line-height: 220%
+      padding: 0 15px
+      &:hover,
+      &.active,
+      &.sidr-class-active
+        &:hover
+          color: $color-tertiary
+      a
+        display: block
+        text-decoration: none
+        color: $color-shadow2
+      ul
+        margin: 0
+        li
+          font-size: 0.7em
+          line-height: 190%
+          color: $color-primary
+          padding: 0
+          &:hover,.sidr ul li ul li.active,.sidr ul li ul li.sidr-class-active
+            line-height: 190%
+            color: $color-primary
+          a
+            color: $color-shadow2
+
+// keeps mobile menu button hidden in desktop/tablet view:
+#responsive-menu-button
+  display: none
+  @media only screen and (max-width: 450px)
+    z-index: 1
+    display: block
+    float: right
+    right: 4%
+    color: $color-primary
+    font-size: 2em
+    margin: 0.5em 0
+
+// keeps mobile menu hidden in desktop/tablet view:
+#mobile-header
+  display: none
+  @media only screen and (max-width: 450px)
+    display: block
+    right: 0
+    z-index: 2
+
+// keeps home link hidden in desktop/tablet view:
+.nav-home-link
+  display: none
+  @media only screen and (max-width: 450px)
+    display: block
