@@ -94,6 +94,10 @@ body {
       display: block;
       margin: 8% 0 2% 0; } }
 
+@media only screen and (min-width: 451px) {
+  #home-page .site-header {
+    padding-top: 12%; } }
+
 .nav-items {
   margin: 1.3em auto 2.4em auto;
   width: 65%;
@@ -133,6 +137,12 @@ body {
         color: #C3DB67; }
       .nav-items li a:active {
         color: #D0627E; }
+
+@media only screen and (max-width: 450px) {
+  #home-page .nav-items {
+    display: block; }
+    #home-page .nav-items li {
+      display: block; } }
 
 .content {
   margin: 0 auto 0 auto;
@@ -197,7 +207,7 @@ body {
     position: relative; }
 
 #social-footer a {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 .icon-links--horizontal {
   width: 35%;
@@ -335,6 +345,9 @@ body {
 
 #responsive-menu-button {
   display: none; }
+  #responsive-menu-button img {
+    width: 0;
+    margin: 0; }
   @media only screen and (max-width: 450px) {
     #responsive-menu-button {
       z-index: 1;
@@ -343,15 +356,11 @@ body {
       right: 4%;
       color: #C3DB67;
       font-size: 2em;
-      margin: 0.5em 0; } }
-
-#mobile-header {
-  display: none; }
-  @media only screen and (max-width: 450px) {
-    #mobile-header {
-      display: block;
-      right: 0;
-      z-index: 2; } }
+      margin: 0.5em 0; }
+      #responsive-menu-button img {
+        width: 0.8em;
+        margin-right: 1em;
+        margin-top: 0.3em; } }
 
 .nav-home-link {
   display: none; }

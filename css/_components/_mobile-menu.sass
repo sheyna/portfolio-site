@@ -50,6 +50,9 @@
 // keeps mobile menu button hidden in desktop/tablet view:
 #responsive-menu-button
   display: none
+  img
+    width: 0
+    margin: 0
   @media only screen and (max-width: 450px)
     z-index: 1
     display: block
@@ -58,14 +61,10 @@
     color: $color-primary
     font-size: 2em
     margin: 0.5em 0
-
-// keeps mobile menu hidden in desktop/tablet view:
-#mobile-header
-  display: none
-  @media only screen and (max-width: 450px)
-    display: block
-    right: 0
-    z-index: 2
+    img
+      width: 0.8em
+      margin-right: 1em
+      margin-top: 0.3em
 
 // keeps home link hidden in desktop/tablet view:
 .nav-home-link
