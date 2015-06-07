@@ -8,16 +8,18 @@ function getPortfolioItem(fileName, portfolioNumber, type) {
         alt="' + portfolio[portfolioNumber].title + '" class="' + portfolio[portfolioNumber].imageClass + '"></figure><h1 tabindex="0">\
         ' + portfolio[portfolioNumber].title + '</h1>';
         if (type == "web") {
+          statusHTML += '<p tabindex="0">';
           if (portfolio[portfolioNumber].liveProjectLink) {
-            statusHTML += '<p tabindex="0"><a href="' + portfolio[portfolioNumber].liveProjectLink + '" \
+            statusHTML += '<a href="' + portfolio[portfolioNumber].liveProjectLink + '" \
             target="_blank">View Live Project</a>';
           }
           if (portfolio[portfolioNumber].liveProjectLink && portfolio[portfolioNumber].githubLink) {
             statusHTML += '&nbsp;&nbsp;|&nbsp;&nbsp;';
           }
           if (portfolio[portfolioNumber].githubLink) {
-            statusHTML += '<a href="' + portfolio[portfolioNumber].githubLink + '" target="_blank">View Repo on GitHub</a></p>';
+            statusHTML += '<a href="' + portfolio[portfolioNumber].githubLink + '" target="_blank">View Repo on GitHub</a>';
           }
+          statusHTML += '</p>';
         }
         for (var i = 0; i < portfolio[portfolioNumber].description.length; i++) {
           statusHTML += '<p tabindex="0">' + portfolio[portfolioNumber].description[i] + '</p>';

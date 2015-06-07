@@ -37,5 +37,20 @@
     "liveProjectLink": "http://www.sheynawatkins.com",
     "githubLink": "https://github.com/sheyna/portfolio-site",
     "description": ["I created this website entirely from scratch using Sass, Ajax, JSON, HTML and JavaScript. The social media icons come from IcoMoon."]
+  },
+  {
+    "imageURL": "images/webdesign/web-lola.jpg",
+    "title": "Lola: A Storefront",
+    "imageClass": "img--horizontal",
+    "liveProjectLink": "http://murmuring-fortress-8684.herokuapp.com/",
+    "githubLink": "https://github.com/sheyna/lola",
+    "description": ["A sample storefront design created in Node.js Express using Jade, Javascript and Sass."]
+  },
+  {
+    "imageURL": "images/webdesign/web-liberty.jpg",
+    "title": "Liberty: A Front-end example",
+    "imageClass": "img--horizontal",
+    "githubLink": "https://github.com/sheyna/SampleProject",
+    "description": ["A sample front-end example created using Sass and HTML and JavaScript from other sources.", "I did not create this design."]
   }
 ]

@@ -17,3 +17,11 @@ document.getElementById('webDiscGolf').addEventListener("click", function() {
 document.getElementById('webSheyna').addEventListener("click", function() {
   getPortfolioItem('js/webDesign.json', 4, "web");
 }, false);
+
+document.getElementById('webLola').addEventListener("click", function() {
+  getPortfolioItem('js/webDesign.json', 5, "web");
+}, false);
+
+document.getElementById('webLiberty').addEventListener("click", function() {
+  getPortfolioItem('js/webDesign.json', 6, "web");
+}, false);
