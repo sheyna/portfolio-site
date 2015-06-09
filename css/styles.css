@@ -349,23 +349,27 @@ body {
             color: #535a36; }
 
 #responsive-menu-button {
-  display: none; }
-  #responsive-menu-button img {
-    width: 0;
-    margin: 0; }
+  display: none;
+  width: 0;
+  margin: 0;
+  text-decoration: none; }
   @media only screen and (max-width: 450px) {
     #responsive-menu-button {
+      text-decoration: none;
       z-index: 1;
+      width: auto;
       display: block;
       float: right;
       right: 4%;
       color: #C3DB67;
       font-size: 2em;
-      margin: 0.5em 0; }
-      #responsive-menu-button img {
-        width: 0.8em;
-        margin-right: 1em;
-        margin-top: 0.3em; } }
+      margin: 0.8em 0; }
+      #responsive-menu-button .icon-mobilemenu {
+        text-decoration: none;
+        color: #a1a1a1;
+        margin-right: 0.8em; }
+        #responsive-menu-button .icon-mobilemenu:hover, #responsive-menu-button .icon-mobilemenu:active {
+          color: #a1a1a1; } }
 
 .nav-home-link {
   display: none; }
